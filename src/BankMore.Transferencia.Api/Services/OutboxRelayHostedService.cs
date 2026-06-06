@@ -21,7 +21,7 @@ namespace BankMore.Transferencia.Api.Services;
 ///   - Para cada row: produce com `acks=all`, `enable.idempotence=true`
 ///   - Sucesso → MarcarPublicado. Falha → MarcarFalha (incrementa tentativas,
 ///     próximo poll só pega após backoff exponencial)
-///   - Sem DLQ ainda — depois de N tentativas vai virar TODO Sprint 6
+///   - Após Outbox:MaxTentativas (default 5), move pra DLQ (dead_letter_em) — Sprint 6.A
 /// </summary>
 public class OutboxRelayHostedService(
     IServiceProvider services,
