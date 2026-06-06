@@ -17,7 +17,7 @@ que aprovava tudo. Não tinha:
 | Opção | Avaliação |
 |---|---|
 | **Python puro + Redis pra state** | Funciona mas reinventa Flink. State partition manual, sem checkpoint automático, sem watermark. |
-| **Flink em Java** | Caminho mais natural. Mas perde "PyFlink" do arquitetura do projeto (projeto destacava Python em streaming). |
+| **Flink em Java** | Caminho mais natural, mas perde o PyFlink — Python em streaming é parte central da arquitetura. |
 | **PyFlink 1.18 real** (escolhida) | JVM + Python API. KeyedProcessFunction com `MapState`, RocksDB backend, EXACTLY_ONCE checkpoint. |
 
 ## Decisão

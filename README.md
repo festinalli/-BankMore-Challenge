@@ -172,7 +172,6 @@ bash scripts/bench.sh # micro-bench: lat p50/p95 + throughput de N transferênci
 ## Como rodar (1 comando)
 
 ```bash
-cd BankMore
 make env            # cria .env (uma vez)
 make up             # sobe tudo: postgres + redis + kafka + flink + APIs + worker + auto-approver
 make e2e            # valida fluxo end-to-end (Alice → Bob, R$ 200 TED, valida saldos)
