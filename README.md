@@ -22,6 +22,9 @@ Architecture + CQRS + DDD) em 3 bounded contexts: ContaCorrente, Transferência 
 > **Sprints 1–10 done.** Changelog resumido abaixo; decisões em `docs/adr/` (0001–0019).
 > Validação: `make e2e` (7 cenários de transferência) + `make e2e-pix` (**10 fluxos PIX**).
 
+<details>
+<summary><b>📋 Changelog detalhado — Sprints 1–10</b> (clique para expandir)</summary>
+
 > **Sprint 1 done** (11/05): stack 100% Docker, fluxo Solicitada → Worker.
 >
 > **Sprint 2 done** (16/05): detector com state, persistência de status no Postgres,
@@ -138,6 +141,8 @@ Architecture + CQRS + DDD) em 3 bounded contexts: ContaCorrente, Transferência 
 > feature store Redis + alerta de burst. (B) **mTLS na RSFN**: CA self-signed
 > (papel da ICP-Brasil), `bacen-sim` exige client cert na 8443, `pix-api` apresenta.
 > ADR 0019.
+
+</details>
 
 ## Arquitetura do PIX (Sprints 8–10)
 
