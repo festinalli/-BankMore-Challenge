@@ -1,5 +1,14 @@
 # BankMore — Real-Time Fraud Detection + PIX
 
+![.NET 8](https://img.shields.io/badge/.NET%208-512BD4?logo=dotnet&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)
+![PyFlink 1.18](https://img.shields.io/badge/PyFlink%201.18-E6526F?logo=apacheflink&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
 Sistema bancário event-driven com **detecção de fraude em tempo real** e um
 **arranjo PIX completo** (DICT, liquidação ISO 20022, MED, QR EMVCo, PIX Automático,
 NFC, Open Finance), com **mTLS na RSFN**.
